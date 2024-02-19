@@ -1,16 +1,9 @@
 package postgres
 
 import (
+	"context"
 	"fmt"
 	"github.com/jackc/pgx/v4"
-)
-postgres
-
-import (
-"context"
-"fmt"
-
-"github.com/jackc/pgx/v5"
 )
 
 func Connect(host string, port int, user, password, dbname string) (*pgx.Conn, error) {
